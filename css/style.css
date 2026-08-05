@@ -151,6 +151,14 @@ nav a:hover {
   transform: translateY(-2px);
 }
 
+/* ===== GENERAL CONTAINER ===== */
+.container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
 .mobile-menu-btn {
   display: none;
 }
