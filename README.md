@@ -2,7 +2,9 @@
 
 Welcome to the official website repository for **Baobab Bites Café** — Jalangbam's destination for authentic Gambian home cooking, fresh-baked goods, and specialty beverages.
 
-## About Baobab Bites
+## Project Overview
+
+**Baobab Bites Café** is a static, modern website built for a Gambian café in Jalangbam. The site showcases the café's menu, gallery, services, and provides direct booking via WhatsApp. Built with **HTML5 and CSS3 only** — no JavaScript required.
 
 Baobab Bites Café is a local café in Jalangbam, The Gambia, dedicated to serving:
 - **Authentic Gambian Dishes**: Daily stews, benachin, domada, and chicken yassa
@@ -16,22 +18,65 @@ Baobab Bites Café is a local café in Jalangbam, The Gambia, dedicated to servi
 
 ---
 
-## Website Structure
+## Tech Stack
+
+**HTML5 + CSS3 Only**
+- ✅ No JavaScript
+- ✅ Semantic HTML structure
+- ✅ CSS Flexbox & Grid layouts
+- ✅ CSS Variables for theming
+- ✅ Responsive design with media queries
+- ✅ WebP image optimization (87% size reduction)
+- ✅ Lazy loading for images
+- ✅ Hosted on GitHub Pages
+
+---
+
+## Color Palette
+
+| Color Name | Hex Value | Usage |
+|-----------|-----------|-------|
+| **Primary** | #0B6073 | Primary dark background, buttons |
+| **Primary Dark** | #084A56 | Darker shading |
+| **Primary Light** | #0E7A91 | Highlights |
+| **Accent** | #3E8BFF | Call-to-action buttons |
+| **Accent Dark** | #0E6DD8 | Hover states |
+| **Accent Light** | #83B9FF | Light accents |
+| **Light** | #FFFAF0 | Light backgrounds |
+| **Text** | #102A33 | Primary text |
+| **Text Light** | #2C3E50 | Secondary text |
+| **Muted** | #5E7782 | Muted content |
+| **White** | #FFFFFF | Pure white |
+
+---
+
+## Typography
+
+- **Font Family**: Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif
+- **Headings**: Georgia, Palatino, serif (fallbacks)
+- **Body**: System font stack for optimal performance
+- **Font Weights**: 700-900 for headings, regular for body text
+
+---
+
+## File Structure
 
 ```
-Baobab-Bites-Cafe.St/
-├── index.html           # Home page (hero, featured items, about preview)
-├── menu.html            # Full menu with offerings and prices
-├── gallery.html         # Photo gallery of dishes and café ambiance
-├── contact.html         # Contact information and booking form
-├── style.css            # Custom styling with branded color scheme
-├── images/              # All images used throughout the site
+Baobab-Bites-Cafe/
+├── index.html              # Home page (hero, about, featured items)
+├── menu.html               # Full menu with categories and pricing
+├── gallery.html            # Photo gallery of dishes and café
+├── contact.html            # Contact information and booking form
+├── css/
+│   └── style.css           # Main stylesheet with CSS variables
+├── images/                 # Optimized WebP and image assets (59 images)
 │   ├── hero-main.webp
 │   ├── menu-banner.jpeg
-│   ├── Dishes: chicken-yassa.webp, benachin.png, domada-soup.png, etc.
+│   ├── Dishes: chicken-yassa.webp, benachin.webp, domada-soup.webp, etc.
 │   ├── Beverages: baobab-latte.webp, gambian-coffee-touba.jpg, etc.
-│   └── Team photos: owner.jpg, chef.jpeg, barista.jpeg, etc.
-└── README.md            # This file
+│   ├── Bakes: butter-croissant.webp, cinnamon-roll.webp, etc.
+│   └── Team: owner.jpg, chef.jpeg, barista.jpeg, etc.
+└── README.md               # This file
 ```
 
 ---
@@ -40,64 +85,96 @@ Baobab-Bites-Cafe.St/
 
 ### 1. **Home (index.html)**
 The landing page featuring:
-- Navigation bar with links to all sections
-- Hero section with welcome message and booking call-to-action
+- Sticky navigation bar with all page links
+- Hero section with welcome message
 - "Book a table" button (links to WhatsApp)
 - Featured images of the café and popular dishes
+- About section with café story
+- Team showcase
+- Testimonials
+- Call-to-action sections
 
 ### 2. **Menu (menu.html)**
 Comprehensive menu showcasing:
-- Gambian main dishes
+- Menu banner with café imagery
+- Gambian main dishes with descriptions and prices
 - Breakfast items and baked goods
-- Beverages (hot and cold)
-- Pricing information
-- Dietary considerations
+- Hot and cold beverages
+- Card-based layout for easy browsing
+- All images optimized for fast loading
 
 ### 3. **Gallery (gallery.html)**
 Visual showcase including:
-- Food photography
-- Café interior and exterior
-- Team members
-- Customer moments
-- Seasonal specials
+- Grid layout of food photography
+- Café interior and exterior shots
+- Team member photos
+- Dish close-ups
+- All images lazy-loaded for performance
 
 ### 4. **Contact (contact.html)**
 Customer engagement page with:
-- Location information
-- Operating hours
-- Contact methods
-- WhatsApp booking link
-- Contact form (if applicable)
-
----
-
-## Design & Branding
-
-### Color Palette
-- **Cocoa** (#40291F): Primary dark brown
-- **Persimmon** (#D9603F): Accent orange-red
-- **Cream** (#FBF3E8): Light background
-- **Taupe** (#7A6653): Secondary neutral
-- **Navy** (#14335A): Accent blue
-- **White** (#FFFFFF): Clean backgrounds
-
-### Typography
-- **Headings**: Bitter (serif font)
-- **Body**: Nunito Sans (sans-serif font)
-- **Fallbacks**: Georgia and Helvetica Neue for compatibility
-
-### Responsive Design
-- Mobile-first approach
-- Mobile menu button for navigation on small screens
-- Fully responsive images and layouts
+- Location information and map
+- Operating hours and contact details
+- WhatsApp booking integration
+- Contact form for inquiries
+- Visit Us panel with business info
+- Book a Table panel for reservations
 
 ---
 
 ## Key Features
 
-✅ **Mobile Optimized** — Works seamlessly on phones, tablets, and desktops  
+✅ **100% HTML + CSS Only** — No JavaScript required  
+✅ **Mobile Responsive** — Works seamlessly on phones, tablets, and desktops  
+✅ **Optimized Images** — WebP format with 87% size reduction for fast loading  
+✅ **Lazy Loading** — Images load only when visible on screen  
 ✅ **WhatsApp Integration** — Direct booking via WhatsApp with pre-filled messages  
-✅ **Image Gallery** — High-quality WebP and JPEG images  
+✅ **CSS Flexbox Layout** — Modern, clean layout without any frameworks  
+✅ **Sticky Navigation** — Always accessible navbar for easy browsing  
+✅ **GitHub Pages Hosting** — Free, fast, and reliable deployment
+
+---
+
+## How to Use
+
+1. **View Locally**: Open `index.html` in your browser
+2. **Customize**: Edit `css/style.css` to adjust colors, fonts, and spacing
+3. **Add Content**: Update HTML files to change text and images
+4. **Deploy**: Push to GitHub to auto-deploy on GitHub Pages
+
+---
+
+## Live Demo
+
+🌐 Visit: [https://stisla2021.github.io/Baobab-Bites-Caf-/](https://stisla2021.github.io/Baobab-Bites-Caf-/)
+
+---
+
+## Browser Support
+
+- ✅ Chrome/Edge (latest)
+- ✅ Firefox (latest)
+- ✅ Safari (latest)
+- ✅ Mobile browsers (iOS Safari, Chrome Mobile)
+
+---
+
+## Performance
+
+- **Image Optimization**: Converted PNG/JPG to WebP (87% smaller)
+- **Lazy Loading**: Native HTML `loading="lazy"` attribute
+- **CSS Variables**: Efficient theming system
+- **No Dependencies**: Zero build tools or external frameworks required
+
+---
+
+## License
+
+This project is created for Baobab Bites Café in Jalangbam, The Gambia.
+
+---
+
+**Last Updated**: August 5, 2026  
 ✅ **Custom Branding** — Unique color scheme and typography  
 ✅ **Fast Loading** — Optimized image formats and efficient CSS  
 ✅ **Accessibility** — Proper semantic HTML and alt text for images  
