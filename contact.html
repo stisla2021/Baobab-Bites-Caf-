@@ -188,50 +188,6 @@
   </div>
 </footer>
 
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    var form = document.getElementById('booking-form');
-    if (!form) return;
-
-    var messageField = form.message;
-    var inquiryField = form.inquiry;
-    var params = new URLSearchParams(window.location.search);
-    var selectedDish = params.get('dish');
-    if (selectedDish) {
-      var dishText = selectedDish.trim();
-      if (dishText) {
-        if (messageField && !messageField.value.trim()) {
-          messageField.value = 'I would like to order: ' + dishText + '.';
-        }
-        if (inquiryField && !inquiryField.value) {
-          inquiryField.value = 'takeaway';
-        }
-      }
-    }
-
-    form.addEventListener('submit', function(event) {
-      event.preventDefault();
-      var name = encodeURIComponent(form.name.value.trim() || 'Guest');
-      var phone = encodeURIComponent(form.phone.value.trim() || 'No phone');
-      var time = encodeURIComponent(form.time.value || 'No time');
-      var guests = encodeURIComponent(form.guests.value || '2');
-      var message = encodeURIComponent(form.message.value.trim() || 'No additional details.');
-      var text = 'Booking request from ' + name + '. Phone: ' + phone + '. Time: ' + time + '. Guests: ' + guests + '. Notes: ' + message;
-      window.location.href = 'https://wa.me/2207480021?text=' + text;
-    });
-  });
-</script>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function(){
-      function showMessage(e){
-        e.preventDefault();
-        alert('No arguing with customers or employees you know the drills');
-      }
-      document.querySelectorAll('.policy-link').forEach(function(el){el.addEventListener('click', showMessage);});
-      document.querySelectorAll('.terms-link').forEach(function(el){el.addEventListener('click', showMessage);});
-    });
-  </script>
 
   <!-- Policy Modal -->
   <div id="policyModal" class="modal" aria-hidden="true">
@@ -245,35 +201,6 @@
       </div>
     </div>
   </div>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function(){
-      var modal = document.getElementById('policyModal');
-      var backdrop = document.getElementById('policyBackdrop');
-      var close = document.getElementById('policyClose');
-      var ok = document.getElementById('policyOk');
-      var messageEl = document.getElementById('policyMessage');
-
-      function openPolicy(e){
-        if(e) e.preventDefault();
-        messageEl.textContent = "We aim to keep Baobab Bites a welcoming place for everyone. Please be respectful to staff and other guests. If you have any issues, ask to speak with the manager and we’ll do our best to help.";
-        modal.classList.add('show');
-        modal.setAttribute('aria-hidden','false');
-        close.focus();
-      }
-      function closePolicy(){
-        modal.classList.remove('show');
-        modal.setAttribute('aria-hidden','true');
-      }
-
-      document.querySelectorAll('.policy-link, .terms-link').forEach(function(el){el.addEventListener('click', openPolicy);});
-      close.addEventListener('click', closePolicy);
-      ok.addEventListener('click', closePolicy);
-      backdrop.addEventListener('click', closePolicy);
-      document.addEventListener('keydown', function(e){ if(e.key === 'Escape' && modal.classList.contains('show')) closePolicy(); });
-    });
-  </script>
-  <script src="script.js"></script>
 
 </body>
 </html>

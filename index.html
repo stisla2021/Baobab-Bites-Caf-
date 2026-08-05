@@ -286,34 +286,8 @@
   </div>
 </div>
 
-<script>
-document.addEventListener('DOMContentLoaded', function(){
-  var modal = document.getElementById('policyModal');
-  var backdrop = document.getElementById('policyBackdrop');
-  var close = document.getElementById('policyClose');
-  var ok = document.getElementById('policyOk');
-  var messageEl = document.getElementById('policyMessage');
 
-  function openPolicy(e){
-    if(e) e.preventDefault();
-    messageEl.textContent = "We aim to keep Baobab Bites a welcoming place for everyone. Please be respectful to staff and other guests. If you have any issues, ask to speak with the manager and we’ll do our best to help.";
-    modal.classList.add('show');
-    modal.setAttribute('aria-hidden','false');
-    close.focus();
-  }
-  function closePolicy(){
-    modal.classList.remove('show');
-    modal.setAttribute('aria-hidden','true');
-  }
 
-  document.querySelectorAll('.policy-link, .terms-link').forEach(function(el){el.addEventListener('click', openPolicy);});
-  close.addEventListener('click', closePolicy);
-  ok.addEventListener('click', closePolicy);
-  backdrop.addEventListener('click', closePolicy);
-  document.addEventListener('keydown', function(e){ if(e.key === 'Escape' && modal.classList.contains('show')) closePolicy(); });
-});
-</script>
-<script src="script.js"></script>
 
 </body>
 </html>
