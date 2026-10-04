@@ -242,7 +242,13 @@ Format: `https://wa.me/2207480021?text=Your%20custom%20message`
 
 ## Deployment & Hosting
 
-This website is hosted on **GitHub Pages** and is fully static. To deploy:
+This website can be deployed on **Netlify** or **GitHub Pages** and is fully static.
+
+### Netlify
+
+The repository includes a `netlify.toml` with the publish directory and Netlify site ID configured. Connect this repository to the matching site in Netlify and deploy the repository root; no build command is required.
+
+### GitHub Pages
 
 1. Push changes to the `main` branch
 2. GitHub Pages automatically builds and deploys
