@@ -164,7 +164,7 @@ Customer engagement page with:
 - **Image Optimization**: Converted PNG/JPG to WebP (87% smaller)
 - **Lazy Loading**: Native HTML `loading="lazy"` attribute
 - **CSS Variables**: Efficient theming system
-- **No Dependencies**: Zero build tools or external frameworks required
+- **No Runtime Dependencies**: TypeScript is only needed when rebuilding the browser script
 
 ---
 
@@ -208,7 +208,7 @@ Format: `https://wa.me/2207480021?text=Your%20custom%20message`
 
 - **HTML5** — Modern, semantic markup
 - **CSS3** — Custom properties, flexbox, and grid layouts
-- **JavaScript** — Lightweight mobile menu functionality (`script.js`)
+- **TypeScript** — Typed mobile navigation and WhatsApp order handling (`script.ts`), compiled to `script.js`
 - **Images** — WebP, JPEG, and PNG formats for optimal loading
 - **Responsive Design** — Mobile-first approach, tested down to 320px width
 - **GitHub Pages** — Fully compatible, all relative image paths
@@ -227,7 +227,8 @@ Format: `https://wa.me/2207480021?text=Your%20custom%20message`
 - ⚡ **Performance** — Optimized background images for mobile (scrolling instead of fixed)
 
 **Files Added/Modified:**
-- ✅ NEW: `script.js` — Mobile menu and interaction handler
+- ✅ NEW: `script.ts` — Typed mobile menu and order handler
+- ✅ GENERATED: `script.js` — Browser-ready output compiled from TypeScript
 - ✅ UPDATED: `style.css` — Mobile responsive improvements and fixes
 - ✅ UPDATED: All HTML files — Added script tag for mobile menu
 
@@ -246,7 +247,7 @@ This website can be deployed on **Netlify** or **GitHub Pages** and is fully sta
 
 ### Netlify
 
-The Netlify project is linked to this GitHub repository and deploys the `main` branch. Pushes to `main` trigger a production deploy. Netlify publishes the repository root; no build command is required.
+The Netlify project is linked to this GitHub repository and deploys the `main` branch. Pushes to `main` trigger a production deploy. Netlify installs the TypeScript compiler and builds `script.js` from `script.ts` before publishing the repository root.
 
 ### GitHub Pages
 
