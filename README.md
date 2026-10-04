@@ -4,7 +4,7 @@ Welcome to the official website repository for **Baobab Bites Café** — Jalang
 
 ## Project Overview
 
-**Baobab Bites Café** is a static, modern website built for a Gambian café in Jalangbam. The site showcases the café's menu, gallery, services, and provides direct booking via WhatsApp. Built with **HTML5 and CSS3 only** — no JavaScript required.
+**Baobab Bites Café** is a static, modern website built for a Gambian café in Jalangbam. The site showcases the café's menu, gallery, services, and provides booking and ordering through WhatsApp. It uses HTML, CSS, and lightweight JavaScript for interactive navigation and order requests.
 
 Baobab Bites Café is a local café in Jalangbam, The Gambia, dedicated to serving:
 - **Authentic Gambian Dishes**: Daily stews, benachin, domada, and chicken yassa
@@ -21,7 +21,7 @@ Baobab Bites Café is a local café in Jalangbam, The Gambia, dedicated to servi
 ## Tech Stack
 
 **HTML5 + CSS3 Only**
-- ✅ No JavaScript
+- ✅ Lightweight JavaScript for the mobile menu and prefilled order requests
 - ✅ Semantic HTML structure
 - ✅ CSS Flexbox & Grid layouts
 - ✅ CSS Variables for theming
@@ -124,7 +124,7 @@ Customer engagement page with:
 
 ## Key Features
 
-✅ **100% HTML + CSS Only** — No JavaScript required  
+✅ **Static Website** — HTML and CSS with lightweight JavaScript interactions
 ✅ **Mobile Responsive** — Works seamlessly on phones, tablets, and desktops  
 ✅ **Optimized Images** — WebP format with 87% size reduction for fast loading  
 ✅ **Lazy Loading** — Images load only when visible on screen  
@@ -246,7 +246,7 @@ This website can be deployed on **Netlify** or **GitHub Pages** and is fully sta
 
 ### Netlify
 
-The repository includes a `netlify.toml` with the publish directory and Netlify site ID configured. Connect this repository to the matching site in Netlify and deploy the repository root; no build command is required.
+The Netlify project is linked to this GitHub repository and deploys the `main` branch. Pushes to `main` trigger a production deploy. Netlify publishes the repository root; no build command is required.
 
 ### GitHub Pages
 

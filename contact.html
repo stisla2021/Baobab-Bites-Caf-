@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact & Book | Baobab Bites Café</title>
 <link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
 </head>
 <body>
 
@@ -14,7 +15,7 @@
     <div class="logo">
       <span class="logo-icon">B</span> Baobab Bites ☕
     </div>
-    <nav>
+    <nav id="site-navigation">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="menu.html">Menu</a></li>
@@ -34,7 +35,7 @@
         </a>
       </div>
     </nav>
-    <button class="mobile-menu-btn">☰</button>
+    <button class="mobile-menu-btn" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-navigation">☰</button>
   </div>
 </header>
 <main>
@@ -45,7 +46,7 @@
   <div class="container">
     <span class="kicker kicker-light">CONTACT</span>
     <h1>Message us on WhatsApp to book a table</h1>
-    <p>Send your booking request directly on WhatsApp, or fill the form and we will reply there.</p>
+    <p id="booking-intro">Send your booking request directly on WhatsApp, or fill the form and we will reply there.</p>
   </div>
 </section>
 
@@ -55,8 +56,9 @@
     
     <!-- FORM -->
     <div class="contact-form">
-      <h3>Reserve a table</h3>
+      <h3 id="booking-title">Reserve a table</h3>
       <form action="#" method="POST" id="booking-form">
+        <p id="order-selection" class="order-selection" aria-live="polite" hidden></p>
         <div class="form-group">
           <label for="name">Your Name</label>
           <input id="name" type="text" name="name" required>
@@ -78,11 +80,11 @@
           <textarea id="message" name="message" rows="4" placeholder="Dietary needs, occasion, etc"></textarea>
         </div>
         <div class="form-actions">
-          <button type="submit" class="btn btn-primary btn-block">Send Booking Request</button>
+          <button id="booking-submit" type="submit" class="btn btn-primary btn-block">Send Booking Request</button>
           <button type="reset" class="btn btn-outline btn-block">Reset form</button>
         </div>
       </form>
-      <p class="muted contact-note">We will confirm by WhatsApp within 30 minutes.</p>
+      <p id="booking-note" class="muted contact-note">We will confirm by WhatsApp within 30 minutes.</p>
     </div>
 
     <!-- INFO -->
@@ -125,7 +127,7 @@
           Sunday: 8:00am - 4:00pm
         </div>
       </div>
-      <a href="https://wa.me/2207480021" target="_blank" rel="noopener" class="btn btn-primary btn-block">Order on WhatsApp</a>
+      <a href="contact.html?intent=order" class="btn btn-primary btn-block">Order a plate</a>
     </div>
 
   </div>
